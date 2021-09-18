@@ -132,3 +132,15 @@ plt.ylabel('Y')
 plt.title('Linear Regression Fit')
 plt.legend()
 
+#part 2
+df = pd.read_csv('D3.csv')
+df.head()
+df
+
+reg = linear_model.LinearRegression()
+reg.fit(df[['X1','X2','X3']], df.Y)
+reg.coef_
+
+
+
+
